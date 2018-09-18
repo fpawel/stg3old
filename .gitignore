@@ -1,0 +1,10 @@
+[Oo]bj/
+[Ll]og/
+*.~*
+*.tds
+*.log
+*.obj
+form1.ini
+devices.cfg
+comm.ini
+config.ini

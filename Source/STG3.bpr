@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\bin\STG3.exe"/>
+    <OBJFILES value="..\obj\STG3.obj ..\obj\Unit1.obj ..\obj\MyWindow.obj ..\obj\MyExeption.obj 
+      ..\obj\guicon.obj ..\obj\MyFileCtrl.obj ..\obj\AnsiStringUtils_.obj 
+      ..\obj\CommSets.obj ..\obj\MyDCBHelper.obj ..\obj\RS232Modbus.obj 
+      ..\obj\uFormComPortSetsDlg.obj ..\obj\MySynchronize.obj 
+      ..\obj\iniUtils_.obj ..\obj\modbus_.obj ..\obj\TaskList.obj 
+      ..\obj\TransferManage.obj ..\obj\myThread.obj ..\obj\uFrmWait.obj 
+      ..\obj\SGrdHlpr.obj ..\obj\DrawGridCell.obj ..\obj\MouseEvt.obj 
+      ..\obj\task_.obj ..\obj\uFormSearchSlaves.obj ..\obj\bcd_.obj 
+      ..\obj\winRS232.obj"/>
+    <RESFILES value="STG3.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm ComPort\Dlg\uFormComPortSetsDlg.dfm 
+      Dialogs\uFrmWait.dfm uFormSearchSlaves.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dsnap.lib teeui.lib teeqr.lib teedb.lib dbrtl.lib bdertl.lib qrpt.lib 
+      indy.lib vclx.lib bcbsmp.lib tee.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib tee.lib bcbsmp.lib vclx.lib indy.lib qrpt.lib bdertl.lib 
+      dbrtl.lib teedb.lib teeqr.lib teeui.lib dsnap.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi vcldb.bpi vclx.bpi bdertl.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi bcbsmp.bpi"/>
+    <PATHCPP value=".;VCLUtils;Excpt;Application;ComPort;ComPort\Dlg;DevSys;Dialogs"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="STG3.cpp"/>
+    <INCLUDEPATH value="DevSys;ComPort\Dlg;Application;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl;my_include\win;WinUtils"/>
+    <LIBPATH value="DevSys;ComPort\Dlg;Application;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\PSDK;Lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-IDevSys -IComPort\Dlg -IApplication -IVCLUtils\Dlg -Imy_include -IDialogs 
+      -IComPort -IVCLUtils -IExcpt -I$(BCB)\include -I$(BCB)\include\vcl 
+      -Imy_include\win -IWinUtils -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-N2..\obj -N0..\obj -$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-I..\obj -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="STG3.res" FORMNAME="" UNITNAME="STG3.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="STG3.cpp" FORMNAME="" UNITNAME="STG3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="Form1" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\MyWindow.cpp" FORMNAME="" UNITNAME="MyWindow" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Excpt\MyExeption.cpp" FORMNAME="" UNITNAME="MyExeption" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Application\guicon.cpp" FORMNAME="" UNITNAME="guicon" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\MyFileCtrl.cpp" FORMNAME="" UNITNAME="MyFileCtrl" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\AnsiStringUtils_.cpp" FORMNAME="" UNITNAME="AnsiStringUtils_" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ComPort\CommSets.cpp" FORMNAME="" UNITNAME="CommSets.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ComPort\MyDCBHelper.cpp" FORMNAME="" UNITNAME="MyDCBHelper.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ComPort\RS232Modbus.cpp" FORMNAME="" UNITNAME="RS232Modbus" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ComPort\Dlg\uFormComPortSetsDlg.cpp" FORMNAME="FormComPortSetsDlg" UNITNAME="uFormComPortSetsDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\MySynchronize.cpp" FORMNAME="" UNITNAME="MySynchronize" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\iniUtils_.cpp" FORMNAME="" UNITNAME="iniUtils_" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DevSys\modbus_.cpp" FORMNAME="" UNITNAME="modbus_.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DevSys\TaskList.cpp" FORMNAME="" UNITNAME="TaskList.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DevSys\TransferManage.cpp" FORMNAME="" UNITNAME="TransferManage.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\myThread.cpp" FORMNAME="" UNITNAME="myThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Dialogs\uFrmWait.cpp" FORMNAME="FrmWait" UNITNAME="uFrmWait" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\SGrdHlpr.cpp" FORMNAME="" UNITNAME="SGrdHlpr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\DrawGridCell.cpp" FORMNAME="" UNITNAME="DrawGridCell" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\MouseEvt.cpp" FORMNAME="" UNITNAME="MouseEvt" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DevSys\task_.cpp" FORMNAME="" UNITNAME="task_" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="uFormSearchSlaves.cpp" FORMNAME="FormSearchSlaves" UNITNAME="uFormSearchSlaves" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VCLUtils\bcd_.cpp" FORMNAME="" UNITNAME="bcd_" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ComPort\winRS232.cpp" FORMNAME="" UNITNAME="winRS232" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+C:\TeeChart_Pro_8_06_Source\Sources\Compiled\Builder6\Bin\DclTGL8C6.bpl=TeeChart 8 for OpenGL
+C:\TeeChart_Pro_8_06_Source\Sources\Compiled\Builder6\Bin\DclTQR8C6.bpl=TeeChart 8 for QuickReport
+C:\TeeChart_Pro_8_06_Source\Sources\Compiled\Builder6\System\TeeImage8C6.bpl=TeeChart Pro 8 Graphic Exporting formats
+c:\cbuilder6\Bin\dcldss60.bpl=Borland Decision Cube Components
+
+[HistoryLists\hlIncludePath]
+Count=21
+Item0=DevSys;ComPort\Dlg;Application;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl;my_include\win;WinUtils
+Item1=..\..\ДАК-М Цех 1\Source\ComPort;DevSys;ComPort\Dlg;Application;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl;my_include\win;WinUtils
+Item2=Application;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl;my_include\win;WinUtils
+Item3=Application;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl;my_include\win
+Item4=AppwithComPortTemplate;Application;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl;my_include\win
+Item5=..;AppwithComPortTemplate;Application;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl;my_include\win
+Item6=Application;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item7=VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item8=C:\Program Files\Borland\CBuilder6\Projects;C:\Current Consumption Account System\Source;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item9=C:\Electric Power Account System\Source;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item10=C:\Program Files\Borland\CBuilder6\Projects;C:\Electric Power Account System\Source;VCLUtils\Dlg;my_include;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item11=VCLUtils\Dlg;Report;C:\CBuilder6\Projects;Application;C:\Program Files\Borland\CBuilder6\Projects;E:\CBuilder6\Projects;my_include;obj;console;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item12=Report;C:\CBuilder6\Projects;Application;C:\Program Files\Borland\CBuilder6\Projects;E:\CBuilder6\Projects;my_include;obj;console;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item13=C:\CBuilder6\Projects;Application;C:\Program Files\Borland\CBuilder6\Projects;E:\CBuilder6\Projects;my_include;obj;console;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item14=Application;C:\Program Files\Borland\CBuilder6\Projects;E:\CBuilder6\Projects;my_include;obj;console;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item15=C:\Program Files\Borland\CBuilder6\Projects;E:\CBuilder6\Projects;my_include;obj;console;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item16=my_include;obj;console;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\include;$(BCB)\include\vcl
+Item17=Intrfc;..\my_include;obj;console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;C:\HromoMaster\TestTCP;C:\OM_Incoming_DB;VCLUtils;WinUtils;Stnd;Excpt;C:\Program Files\Borland\CBuilder6\Projects;C:\AutomationStend73\NI USB-6008;$(BCB)\include;$(BCB)\include\vcl
+Item18=..\my_include;obj;console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;C:\HromoMaster\TestTCP;C:\OM_Incoming_DB;VCLUtils;WinUtils;Stnd;Excpt;C:\Program Files\Borland\CBuilder6\Projects;C:\AutomationStend73\NI USB-6008;$(BCB)\include;$(BCB)\include\vcl
+Item19=obj;console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;C:\HromoMaster\TestTCP;C:\OM_Incoming_DB;VCLUtils;WinUtils;Stnd;Excpt;C:\Program Files\Borland\CBuilder6\Projects;C:\AutomationStend73\NI USB-6008;$(BCB)\include;$(BCB)\include\vcl
+Item20=console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;C:\HromoMaster\TestTCP;C:\OM_Incoming_DB;VCLUtils;WinUtils;Stnd;Excpt;C:\Program Files\Borland\CBuilder6\Projects;C:\AutomationStend73\NI USB-6008;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=22
+Item0=DevSys;ComPort\Dlg;Application;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\PSDK;Lib
+Item1=DevSys;ComPort\Dlg;Application;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\PSDK
+Item2=..\..\ДАК-М Цех 1\Source\ComPort;DevSys;ComPort\Dlg;Application;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\PSDK
+Item3=Application;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\PSDK
+Item4=AppwithComPortTemplate;Application;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\PSDK
+Item5=..;AppwithComPortTemplate;Application;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\PSDK
+Item6=Application;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item7=VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item8=C:\Program Files\Borland\CBuilder6\Projects;C:\Current Consumption Account System\Source;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item9=C:\Electric Power Account System\Source;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item10=C:\Program Files\Borland\CBuilder6\Projects;C:\Electric Power Account System\Source;VCLUtils\Dlg;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item11=VCLUtils\Dlg;C:\Program Files\Borland\CBuilder6\Projects;Report;C:\CBuilder6\Projects;Application;obj;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item12=Report;C:\CBuilder6\Projects;Application;obj;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item13=C:\CBuilder6\Projects;Application;obj;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item14=Application;obj;DevSys;Dialogs;ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item15=C:\CBuilder6\Projects;Application;E:\CBuilder6\Projects;Intrfc;C:\Program Files\Borland\CBuilder6\Projects;..\my_include;obj;console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item16=Application;E:\CBuilder6\Projects;Intrfc;C:\Program Files\Borland\CBuilder6\Projects;..\my_include;obj;console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item17=E:\CBuilder6\Projects;Intrfc;C:\Program Files\Borland\CBuilder6\Projects;..\my_include;obj;console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item18=Intrfc;C:\Program Files\Borland\CBuilder6\Projects;..\my_include;obj;console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item19=..\my_include;obj;console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;VCLUtils;Excpt;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item20=obj;console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;C:\HromoMaster\TestTCP;C:\OM_Incoming_DB;VCLUtils;WinUtils;Stnd;Excpt;C:\Program Files\Borland\CBuilder6\Projects;C:\AutomationStend73\NI USB-6008;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item21=console;DevSys;Dialogs;ComPort;..\Dialogs;..\VCLUtils;..\Excpt;..\ComPort;C:\HromoMaster\TestTCP;C:\OM_Incoming_DB;VCLUtils;WinUtils;Stnd;Excpt;C:\Program Files\Borland\CBuilder6\Projects;C:\AutomationStend73\NI USB-6008;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=4
+Item0=C:\Program Files\Borland\Delphi5\Source\Vcl\
+Item1=$(BCB)\source\vcl;C:\Program Files\Borland\Delphi5\Source\Vcl\;C:\CBuilder6\Source\Indy\
+Item2=$(BCB)\source\vcl;C:\Program Files\Borland\Delphi5\Source\Vcl\
+Item3=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=3
+Item0=..\obj
+Item1=..\obj\
+Item2=obj
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=..\bin\
+Item1=..\bin
+
+[Debugging]
+DebugSourceDirs=C:\Program Files\Borland\Delphi5\Source\Vcl\
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
