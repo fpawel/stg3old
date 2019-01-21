@@ -52,7 +52,7 @@ object FormComPortSetsDlg: TFormComPortSetsDlg
     Left = 7
     Top = 137
     Width = 162
-    Height = 24
+    Height = 21
     EditLabel.Width = 246
     EditLabel.Height = 13
     EditLabel.Caption = #1044#1083#1080#1090#1077#1083#1100#1085#1086#1089#1090#1100' '#1086#1078#1080#1076#1072#1085#1080#1103' '#1089#1080#1084#1074#1086#1083#1072' '#1087#1088#1080#1105#1084#1072', '#1084#1089#1077#1082
@@ -78,7 +78,7 @@ object FormComPortSetsDlg: TFormComPortSetsDlg
     Left = 7
     Top = 98
     Width = 162
-    Height = 24
+    Height = 21
     EditLabel.Width = 133
     EditLabel.Height = 13
     EditLabel.Caption = #1047#1072#1076#1077#1088#1078#1082#1072' '#1086#1090#1087#1088#1072#1074#1082#1080', '#1084#1089#1077#1082
@@ -103,7 +103,7 @@ object FormComPortSetsDlg: TFormComPortSetsDlg
     Left = 7
     Top = 59
     Width = 162
-    Height = 24
+    Height = 21
     EditLabel.Width = 112
     EditLabel.Height = 13
     EditLabel.Caption = #1058#1072#1081#1084#1072#1091#1090' '#1086#1090#1074#1077#1090#1072', '#1084#1089#1077#1082
@@ -137,7 +137,7 @@ object FormComPortSetsDlg: TFormComPortSetsDlg
     Left = 7
     Top = 176
     Width = 163
-    Height = 24
+    Height = 21
     EditLabel.Width = 154
     EditLabel.Height = 13
     EditLabel.Caption = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1087#1086#1074#1090#1086#1088#1086#1074' '#1079#1072#1087#1088#1086#1089#1072

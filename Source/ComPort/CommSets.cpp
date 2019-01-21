@@ -7,12 +7,44 @@
 #include "MyDCBHelper.h"
 #include "Loki\singleton.h"
 #include "boost/regex.hpp"
+#include "Registry.hpp"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
 
+
+
 ////////////////////////////////////////////////////////////////////////////////
 namespace my {	namespace RS232 {
+
+void enumComports(TStrings* ports) {
+
+	TRegistry *reg = new TRegistry(KEY_READ);
+
+	try {
+		reg->RootKey = HKEY_LOCAL_MACHINE;
+		if (!reg->OpenKey("hardware\\devicemap\\serialcomm", false)) {
+			ports->Clear();
+		}
+		else {
+			ports->BeginUpdate();
+			try {
+				reg->GetValueNames(ports);
+				for (int i = ports->Count - 1; i > -1; i--) {
+					ports->Strings[i] = reg->ReadString(ports->Strings[i]);
+				}
+			} catch (...){
+
+			}
+			ports->EndUpdate();
+		}
+	}
+	catch (...) {
+		reg->CloseKey();
+		delete reg;
+	}
+
+}
 
 // статические данные модуля
 struct ModuleVariablesT : public boost::noncopyable
@@ -107,30 +139,16 @@ Setings::Setings() :
 	SetDefaultDCB(dcb_);
     SetDefaultCommTimeOuts(timeOuts_);
 }
-//------------------------------------------------------------------------------
-// информации о портах, предсавленных в системе
-std::vector<AnsiString> SystemPorts()
-{
-    std::vector<AnsiString> ret;
 
-    COMMCONFIG cmCfg = {0};
-    DWORD sz = sizeof(COMMCONFIG);
-    // определим имена ком-портов в системе
-    for( unsigned i=1; i<100; ++i )
-    {
-    	const AnsiString portName = "COM"+IntToStr(i);
-        if( GetDefaultCommConfig( portName.c_str(),  &cmCfg,  &sz ) )
-        	ret.push_back(portName);
-    }
-	return ret;
-
-}
 //------------------------------------------------------------------------------
 // предсавлен ли порт № idx в системе
 bool IsPortPresentedInSystem(const AnsiString& portName)
 {
-	const std::vector<AnsiString> ports = SystemPorts();
-    return std::find( ports.begin(), ports.end(), portName )!=ports.end();
+    TStringList *ports = new TStringList;
+    enumComports(ports);
+    bool r = ports->IndexOf(portName) != -1;
+    delete ports;
+    return r;
 }
 //------------------------------------------------------------------------------
 const DCB& GetDefaultDCB() { return ModuleVars::Instance().defDcb_;}

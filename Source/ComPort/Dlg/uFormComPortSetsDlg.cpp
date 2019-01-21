@@ -89,11 +89,7 @@ void GrdRowsToClb( TStringGrid* grd, TCheckListBox* clb )
 __fastcall TFormComPortSetsDlg::TFormComPortSetsDlg(TComponent* Owner)
 	: TForm(Owner), activated_(false)
 {
-
-	// имена СОМ-портов системы
-    const std::vector<AnsiString>& ports = my::RS232::SystemPorts();
-    for( unsigned i = 0; i<ports.size(); ++i )
-    	cbPortName->Items->Add( ports[i] );
+    my::RS232::enumComports(cbPortName->Items);
 
     correctFooMap_[edTimeOut] = IsTimeOut;
     correctFooMap_[edWriteDelay] = IsWriteDelay;
@@ -157,3 +153,4 @@ void __fastcall TFormComPortSetsDlg::CheckListBox1ClickCheck(TObject *Sender)
     clb.OnClickCheck = CheckListBox1ClickCheck;
 }
 //------------------------------------------------------------------------------
+

@@ -9,6 +9,7 @@
 #include <vector>
 //------------------------------------------------------------------------------
 #include <system.hpp>
+#include <classes.hpp>
 //------------------------------------------------------------------------------
 // boost
 #include "boost\noncopyable.hpp"
@@ -49,8 +50,7 @@ namespace my
 
         std::ostream& operator<<( std::ostream& strm, const my::RS232::Setings& sets );
 
-        // информации о портах, предсавленных в системе
-    	std::vector<AnsiString> SystemPorts();
+        void enumComports(TStrings* ports) ;
 
         // предсавлен ли порт № idx в системе
     	bool IsPortPresentedInSystem(const AnsiString&);
