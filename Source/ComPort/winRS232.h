@@ -82,8 +82,7 @@ namespace RS232
 
         bool IsHandleCreated() const;
 
-        virtual void Open();
-        virtual void Close();
+
 
     private:
         void* hComm_;
@@ -104,6 +103,9 @@ namespace RS232
         void ApplyBuffsSizes();
         void ApplyDCB();
         void ApplyTimeOuts();
+
+        virtual void Open();
+        virtual void Close();
 
 
     };// Класс "СОМ-порт"

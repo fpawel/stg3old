@@ -283,7 +283,7 @@ void RS232ModbusT::OpenChanal()
 
     try
     {
-    	comm_.Open();
+    	comm_.Connect();
         reportState_( RPT_TRNSFR_CNTXT::ITFC, dscr );
     	my::SynchronizeWCout( "соединение установлено.\n" );
     }
